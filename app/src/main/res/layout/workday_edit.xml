@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="org.devfault.businesstravel.activity.ExpenseEdit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerRowMinHeight"
+        style="@style/header_label"
+        android:text="@string/header_detail_data"
+        android:gravity="bottom"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_expense_date"
+        android:clickable="true" android:onClick="showDateDialog"
+        android:minHeight="@dimen/formRowMinHeight"
+        style="@style/form_element"
+        android:layout_gravity="start"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerRowMinHeight"
+        style="@style/header_label"
+        android:text="@string/header_detail_type"
+        android:gravity="bottom"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_expense_type_value"
+        android:minHeight="@dimen/formRowMinHeight"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normalMargin"
+            android:layout_marginEnd="@dimen/normalMargin"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/detail_expense_description"
+            android:minHeight="@dimen/formRowMinHeight"
+            android:hint="@string/hint_description"
+            android:gravity="center_vertical|start"
+            android:layout_weight="1"
+            style="@style/form_element" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dollar_sign"
+            android:id="@+id/textView"
+            android:gravity="center_vertical"
+            style="@style/form_element" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normalMargin"
+            android:layout_marginEnd="@dimen/normalMargin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/detail_expense_amount"
+            android:minHeight="@dimen/formRowMinHeight"
+            android:hint="@string/hint_amount"
+            android:gravity="center_vertical|start"
+            android:layout_weight="1"
+            style="@style/form_element" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normalMargin"
+        android:id="@+id/detail_expense_refundable_row">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/normalMargin"
+            android:src="@drawable/refundable"/>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/normalMargin"
+            android:layout_marginEnd="@dimen/normalMargin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/refundable"
+            android:id="@+id/detail_expense_refundable"
+            android:minHeight="@dimen/formRowMinHeight"
+            android:gravity="center_vertical"
+            style="@style/form_element" />
+
+    </LinearLayout>
+
+</LinearLayout>

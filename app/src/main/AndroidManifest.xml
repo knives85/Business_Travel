@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.devfault.businesstravel" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <provider
+            android:name=".data.BusinessTravelProvider"
+            android:authorities="org.devfault.businesstravel" />
+
+        <activity
+            android:name=".activity.MonthDetailActivity"
+            android:parentActivityName=".activity.YearDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.ExpenseEdit"
+            android:label="@string/work_day_edit_page"/>
+
+
+
+        <activity
+            android:name=".activity.DayDetailActivity"
+            android:label="@string/title_activity_day_detail"
+            android:parentActivityName=".activity.MonthDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.YearDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

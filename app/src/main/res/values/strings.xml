@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Business Travel</string>
+    <string name="action_settings">Settings</string>
+    <string name="work_day_date">Date</string>
+    <string name="work_day_edit_page">Edit Entry</string>
+    <string name="refundable">Refundable</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_description">Description</string>
+    <string name="dollar_sign">$</string>
+    <string name="header_detail_data">Date</string>
+    <string name="header_detail_type">Type</string>
+    <string name="action_save">SAVE</string>
+    <string name="title_activity_day_detail">Day Detail</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_month_detail">Month Detail</string>
+
+</resources>

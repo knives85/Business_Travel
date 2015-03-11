@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/material_green_500</item>
+        <item name="android:colorPrimaryDark">@color/material_green_700</item>
+        <item name="android:colorAccent">@color/material_orange_A200</item>
+    </style>
+
+    <style name="header_label">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/border_bottom</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="form_element">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+    </style>
+
+    <style name="expense_list">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+    </style>
+
+    <style name="income_list">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+    </style>
+
+    <style name="balance_list">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="day_list">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="float_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/floatTextSize</item>
+    </style>
+
+    <style name="day_list_element">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+    </style>
+
+</resources>
